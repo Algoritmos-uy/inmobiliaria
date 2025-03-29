@@ -10,13 +10,13 @@
     }
 
     .welcome-message h2 {
-        font-size: 36px; /* Reduce el tamaño del título */
+        font-size: 22rem; /* Reduce el tamaño del título */
     }
 
     .welcome-message p {
         font-size: 18px; /* Reduce el tamaño del texto */
     }
-    
+
     .text-about {
         width: 90%; /* Ajusta el ancho del texto */
     }
@@ -126,6 +126,9 @@
         width: 150px; /* Reduce el ancho del menú lateral */
     }
 
+    aside a {
+        font-size: 0.75rem;
+    }
     .logo-left img {
         display: none; /* Oculta el logo izquierdo */
     }
