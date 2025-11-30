@@ -16,9 +16,13 @@
     .welcome-message p {
         font-size: 18px; /* Reduce el tamaño del texto */
     }
-    
+
     .text-about {
         width: 90%; /* Ajusta el ancho del texto */
+    }
+
+    aside nav ul li a {
+        font-size: 1.05rem; /* Ajusta ligeramente el tamaño de fuente de los enlaces del menú */
     }
 
     .logo-left img {
@@ -58,6 +62,10 @@
 
     .text-about span {
         font-size: 1.5rem; /* Reduce el tamaño del texto destacado */
+    }
+
+    aside nav ul li a {
+        font-size: 1rem; /* Reduce el tamaño de fuente de los enlaces del menú */
     }
 
     .logo-left img,
@@ -126,6 +134,10 @@
         width: 150px; /* Reduce el ancho del menú lateral */
     }
 
+    aside nav ul li a {
+        font-size: 0.95rem; /* Reduce el tamaño de fuente de los enlaces del menú */
+    }
+
     .logo-left img {
         display: none; /* Oculta el logo izquierdo */
     }
@@ -176,6 +188,10 @@
 
     aside {
         width: 130px; /* Reduce más el ancho del menú lateral */
+    }
+
+    aside nav ul li a {
+        font-size: 0.85rem; /* Reduce más el tamaño de fuente de los enlaces del menú */
     }
 
     #contact-form {

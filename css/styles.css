@@ -1,12 +1,13 @@
 /* Variables CSS para los temas */
 
 :root {
-    --primary-color: #000000;
+    --primary-color: #004a75;
     --secondary-color: #fff;
     --background-color: #f4f4f4;
     --text-color: #333;
     --hover-color: #fa7334;
     --header-height: 60px;
+    
 }
 
 * {
