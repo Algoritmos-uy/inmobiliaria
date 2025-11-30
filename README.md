@@ -2,7 +2,7 @@
 
 ![Licencia](https://img.shields.io/badge/Licencia-MIT-green.svg)
 
-Proyecto educativo de un sitio web para una empresa inmobiliaria, desarrollado para clases de desarrollo front-end. Este proyecto tiene como objetivo enseñar a los estudiantes cómo construir y mejorar un sitio web profesional en el sector inmobiliario.
+Proyecto educativo de un sitio web para una empresa inmobiliaria ficticia, desarrollado para clases de desarrollo front-end. Este proyecto tiene como objetivo enseñar a los estudiantes cómo construir y mejorar un sitio web profesional en el sector inmobiliario.
 
 ## Descripción
 
