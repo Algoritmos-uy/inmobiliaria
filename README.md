@@ -79,7 +79,7 @@ Contacto
 Para más información o consultas:
 
 Nombre: Willans
-Correo electrónico: willans@algoritmos.uy
+Correo electrónico: [willans@algoritmos.uy](mailto:willans@algoritmos.uy)
 GitHub: Algoritmos-uy
 
 Este proyecto es parte de las actividades educativas de Algoritmos-uy y se utiliza para fines de enseñanza en desarrollo front-end.
