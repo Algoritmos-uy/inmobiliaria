@@ -1,19 +1,20 @@
 /* Variables CSS para el tema claro */
-:root {
-    --primary-color: #333;
+:root,
+[data-theme="light"] {
+    --primary-color: #03659d;
     --secondary-color: #fff;
     --background-color: #f4f4f4;
     --text-color: #333;
-    --hover-color: #555;
+    --hover-color: #fa7334;
 }
 
 /* Variables CSS para el tema oscuro */
 [data-theme="dark"] {
-    --primary-color: #fff;
-    --secondary-color: #333;
-    --background-color: #222;
-    --text-color: #fff;
-    --hover-color: #ddd;
+    --primary-color: #1a1a2e;
+    --secondary-color: #ffffff;
+    --background-color: #0f1419;
+    --text-color: #e5e5e5;
+    --hover-color: #ff6b35;
 }
 
 /* Estilos generales que dependen del tema */
@@ -21,44 +22,157 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     transition:
-        background-color 0.3s,
-        color 0.3s;
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 header {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
+    transition: background-color 0.3s ease;
 }
 
 aside {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+aside nav ul li a {
+    color: var(--secondary-color);
+}
+
+aside nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Estilos específicos para tema oscuro */
+[data-theme="dark"] header {
+    background-color: var(--primary-color);
+}
+
+[data-theme="dark"] header h1,
+[data-theme="dark"] .company-name {
+    color: #ffffff;
+}
+
+[data-theme="dark"] #menu-toggle,
+[data-theme="dark"] #theme-toggle {
+    color: #ffffff;
+}
+
+[data-theme="dark"] #menu-toggle:hover,
+[data-theme="dark"] #theme-toggle:hover {
+    color: var(--hover-color);
+}
+
+[data-theme="dark"] aside {
+    background-color: var(--primary-color);
+}
+
+[data-theme="dark"] aside nav ul li a {
+    color: #ffffff;
+}
+
+[data-theme="dark"] aside nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+[data-theme="dark"] .text-about {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+[data-theme="dark"] .text-about p,
+[data-theme="dark"] .text-about ol li,
+[data-theme="dark"] .text-about span,
+[data-theme="dark"] .text-about h2,
+[data-theme="dark"] .text-about h3 {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .text-about hr {
+    border-color: #ffffff;
+    opacity: 0.5;
 }
 
 [data-theme="dark"] #home {
     color: var(--text-color);
 }
 
-[data-theme="dark"] .property-item {
-    background-color: var(--secondary-color);
-    color: var(--secondary-color);
+[data-theme="dark"] .welcome-message h2,
+[data-theme="dark"] .welcome-message p {
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+[data-theme="dark"] .property-item {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
 
+[data-theme="dark"] .property-item h3,
+[data-theme="dark"] .property-item p {
+    color: var(--text-color);
+}
 
 #contact-form input,
 #contact-form textarea {
     background-color: var(--background-color);
     color: var(--text-color);
     border: 1px solid var(--primary-color);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 #contact-form button {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Estilos específicos para el formulario en tema oscuro */
+[data-theme="dark"] #contact-form input,
+[data-theme="dark"] #contact-form textarea {
+    background-color: #2a2a3e;
+    color: #ffffff;
+    border: 2px solid #3a3a5e;
+}
+
+[data-theme="dark"] #contact-form input:focus,
+[data-theme="dark"] #contact-form textarea:focus {
+    background-color: #333348;
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+[data-theme="dark"] #contact-form input::placeholder,
+[data-theme="dark"] #contact-form textarea::placeholder {
+    color: #a0a0b0;
+}
+
+[data-theme="dark"] #contact-form button {
+    background-color: var(--hover-color);
+    color: #ffffff;
+}
+
+[data-theme="dark"] #contact-form button:hover {
+    background-color: #ff8555;
+    transform: scale(1.05);
+}
+
+[data-theme="dark"] #contact-form label {
+    color: #ffffff;
 }
 
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    transition: background-color 0.3s ease;
 }

@@ -1,7 +1,8 @@
-/* Variables CSS para los temas */
+/* Variables CSS para los temas - Ahora se manejan en theme.css */
 
+/*
 :root {
-    --primary-color: #004a75;
+    --primary-color: #2d2d2d;
     --secondary-color: #fff;
     --background-color: #f4f4f4;
     --text-color: #333;
@@ -9,6 +10,7 @@
     --header-height: 60px;
     
 }
+*/
 
 * {
     margin: 0;
@@ -78,7 +80,19 @@ header h1 {
     border: none;
     color: var(--secondary-color);
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    transition:
+        transform 0.3s ease,
+        color 0.3s;
+    z-index: 1002;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    color: var(--hover-color);
 }
 
 #menu-toggle {
@@ -200,7 +214,7 @@ a:hover {
     justify-content: center;
     align-items: r;
     padding: 1rem;
-    background-color: var(--primary-color);;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
     font-size: 1.2rem;
     margin-top: 1rem;

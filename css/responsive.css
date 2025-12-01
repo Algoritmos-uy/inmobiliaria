@@ -134,16 +134,16 @@
         width: 150px; /* Reduce el ancho del menú lateral */
     }
 
-<<<<<<< HEAD
     aside nav ul li a {
         font-size: 0.95rem; /* Reduce el tamaño de fuente de los enlaces del menú */
     }
 
-=======
-    aside a {
-        font-size: 0.75rem;
+    #theme-toggle {
+        font-size: 20px; /* Reduce el tamaño del botón de tema */
+        right: 0.8rem;
+        top: 0.8rem;
     }
->>>>>>> 2a5b34037762239531a8d7aedcea182361569ea5
+
     .logo-left img {
         display: none; /* Oculta el logo izquierdo */
     }
@@ -169,6 +169,12 @@
 
     #menu-toggle {
         font-size: 20px; /* Reduce más el tamaño del botón del menú */
+    }
+
+    #theme-toggle {
+        font-size: 18px; /* Reduce más el tamaño del botón de tema */
+        right: 0.6rem;
+        top: 0.8rem;
     }
 
     .welcome-message h2 {
@@ -224,6 +230,12 @@
 @media (max-width: 359px) {
     .logo-left {
         display: none;
+    }
+
+    #theme-toggle {
+        font-size: 16px; /* Reduce aún más el tamaño del botón de tema */
+        right: 0.5rem;
+        top: 0.7rem;
     }
 
     .company-name {

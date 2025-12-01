@@ -1,32 +1,34 @@
 
-/*
 // Cambio de tema (claro/oscuro)
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
 themeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-theme');
-    const isDarkTheme = body.classList.contains('dark-theme');
-    localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
-    updateThemeIcon(isDarkTheme);
-    body.setAttribute('data-theme', isDarkTheme ? 'dark' : 'light'); // Actualizar el atributo data-theme
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme === 'dark');
 });
 
 // Función para actualizar el ícono del tema
 function updateThemeIcon(isDarkTheme) {
     const icon = themeToggle.querySelector('i');
-    icon.classList.toggle('fa-moon', !isDarkTheme);
-    icon.classList.toggle('fa-sun', isDarkTheme);
+    if (isDarkTheme) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    }
 }
 
 // Cargar el tema guardado al recargar la página
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    body.classList.add('dark-theme');
-    body.setAttribute('data-theme', 'dark'); // Aplicar el tema oscuro al cargar
-    updateThemeIcon(true);
-}
-*/
+const savedTheme = localStorage.getItem('theme') || 'light';
+body.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme === 'dark');
+
 // Modal del Mapa
 const mapButton = document.getElementById('map-button');
 const mapModal = document.getElementById('map-modal');
